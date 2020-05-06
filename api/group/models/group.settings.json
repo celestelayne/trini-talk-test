@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "groups",
+  "info": {
+    "name": "Group"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "words": {
+      "via": "group",
+      "collection": "words"
+    }
+  }
+}

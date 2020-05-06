@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "words",
+  "info": {
+    "name": "Words"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": "name"
+    },
+    "description": {
+      "type": "string"
+    },
+    "group": {
+      "model": "group",
+      "via": "words"
+    }
+  }
+}
